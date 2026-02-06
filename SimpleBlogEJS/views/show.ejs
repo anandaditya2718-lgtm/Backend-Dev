@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= post.title %></title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f5f7fb; margin: 0; }
+        header { background: #4b6cb7; color: #fff; padding: 20px; text-align: center; }
+        .container { max-width: 800px; margin: 20px auto; padding: 0 20px 40px; }
+        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+        .back { margin: 20px 0; display: inline-block; color: #4b6cb7; text-decoration: none; }
+        .content { color: #444; line-height: 1.6; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><%= post.title %></h1>
+    </header>
+    <div class="container">
+        <a class="back" href="/posts">← Back to posts</a>
+        <div class="card">
+            <div class="content"><%= post.content %></div>
+        </div>
+    </div>
+</body>
+</html>

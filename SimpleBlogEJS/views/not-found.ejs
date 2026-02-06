@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not Found</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f5f7fb; margin: 0; }
+        header { background: #4b6cb7; color: #fff; padding: 20px; text-align: center; }
+        .container { max-width: 700px; margin: 20px auto; padding: 0 20px 40px; text-align: center; }
+        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+        a { color: #4b6cb7; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Post Not Found</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <% if (id) { %>
+                <p>No post found with id <strong><%= id %></strong>.</p>
+            <% } else { %>
+                <p>The page you requested was not found.</p>
+            <% } %>
+            <p><a href="/posts">Go back to posts</a></p>
+        </div>
+    </div>
+</body>
+</html>
